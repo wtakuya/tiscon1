@@ -48,7 +48,7 @@
     <div id="top">
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
+                <p>今日中に<font size="5" color="red">5500円</font>以上お買い物していただくと、<font size="5" color="red">35%</font>値引きします！</p>
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
@@ -101,8 +101,9 @@
 
                         </form>
 
-                        <p class="text-center text-muted">Not registered yet?</p>
-                        <p class="text-center text-muted"><a href="/register"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                        <p class="text-center text-muted">まだ登録していませんか?</p>
+                        <p class="text-center text-muted">登録すれば<a href="/register"><strong>お得なサービス</strong></a>を!
+                        <br>登録は簡単で時間もかかりません</p>
 
                     </div>
                 </div>
@@ -295,18 +296,18 @@
 
                     <div class="col-md-3 col-sm-6">
 
-                        <h4>Where to find us</h4>
+                        <h4>企業情報</h4>
 
-                        <p><strong>TIS Inc.</strong>
-                            <br>Sumitomo Fudosan Shinjuku Grand Tower,
-                            <br>17-1,Nishishinjuku 8-chome,
-                            <br>Shinjuku-ku,Tokyo,
-                            <br>160-0023
-                            <br>
-                            <strong>Japan</strong>
+                        <p><strong>TIS企業情報</strong>
+                            <br> <strong>日本</strong>
+                                <br>160-0023
+                                <br>東京新宿区
+                                <br>西新宿8丁目17-1
+                                <br>住友不動産　新宿区グラウンドタワー
+
                         </p>
 
-                        <a href="http://www.tis.co.jp/recruit/index.html">Go to contact page</a>
+                        <a href="http://www.tis.co.jp/recruit/index.html">HPはこちら</a>
 
                         <hr class="hidden-md hidden-lg">
 
@@ -319,7 +320,7 @@
 
                         <hr>
 
-                        <h4>Stay in touch</h4>
+                        <h4>SNSはこちら</h4>
 
                         <p class="social">
                             <a href="http://www.facebook.com/tis.recruit" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>

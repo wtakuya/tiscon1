@@ -21,11 +21,20 @@ import tiscon1.repository.CustomerRepository;
 
 import javax.servlet.http.HttpSession;
 
+//import javax.inject.Inject;
+
+
 /**
  * @author kawasima
  */
+
 @Controller
 public class AccountController {
+
+    //@Inject
+    //PasswordEqualsValidator passwordEqualsValidator; // (1)
+    //injectしようと思ったが、設定しようとしたらうまくいかなかった。
+
     @Autowired
     CustomerRepository customerRepository;
 
@@ -47,8 +56,11 @@ public class AccountController {
             return "redirect:/my/account?id=" + customer.getId();
         } else {
             return "newAccountOrSignIn";
+
         }
+
     }
+
 
     /**
      * Logout.
@@ -56,6 +68,7 @@ public class AccountController {
      * @param session
      * @return
      */
+
     @RequestMapping(value="/logout")
     public String logout(HttpSession session) {
         session.removeAttribute("principal");
@@ -70,9 +83,13 @@ public class AccountController {
     @RequestMapping(value="/register", method=RequestMethod.POST)
     public String register(@Validated AccountRegisterForm form, BindingResult bindingResult
     , HttpSession session) {
+
+
         if (bindingResult.hasErrors()) {
-            return "newAccountOrSignIn";
-        }
+            //if (newAccountOrSignIn.password != newAccountOrSignIn.confirmpassword) {
+                return "newAccountOrSignIn";
+            }
+        //}
         Customer customer = new Customer(form.getName(), form.getEmail(), form.getPassword());
         customerRepository.save(customer);
         UserPrincipal principal = new UserPrincipal(form.getName());

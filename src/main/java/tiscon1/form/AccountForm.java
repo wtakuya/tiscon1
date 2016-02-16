@@ -12,7 +12,7 @@ import java.io.Serializable;
  */
 @Data
 public class AccountForm implements Serializable {
-    @Size(min = 1, max = 100)
+    @Size(min = 1, max = 50)
     @NotNull
     private String name;
 
@@ -20,7 +20,7 @@ public class AccountForm implements Serializable {
     @NotNull
     private String email;
 
-    @Size(min = 6)
+    @Size(min = 10)
     @NotNull
     private String password;
 
